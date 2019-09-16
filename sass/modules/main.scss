@@ -1,0 +1,11 @@
+@import "_vars";
+@import "modules/_footer";
+@import "modules/_header";
+@import "mpdules/_navbar";
+
+body { 
+    color: $main-color;
+    background-color: $body-bg; 
+}
+
+h1, h2, h3 { color: $heading-color;}
