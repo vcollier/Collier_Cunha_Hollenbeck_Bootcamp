@@ -1,6 +1,6 @@
 # Welcome to Boing Designs.
 
-### Boing
+![Alt text](images/logo.svg)
 
 The website was designed and developed is such a way to really express what our company is all about.
 
