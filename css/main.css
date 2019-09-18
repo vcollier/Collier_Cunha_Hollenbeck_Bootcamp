@@ -243,16 +243,14 @@ h3
 .lightbox
 {
 	position: absolute;
-	margin-left: 150px;
-	margin-top: 900px;
-	margin-bottom: 100px;
+	justify-content: center;
 	text-align: center;
 	border-radius: 30px;
+	margin-top: 2730px;
 	box-shadow: 5px 10px #afafaf;
-	width: 70%;
 	top: 0;
 	background-color: rgba(237, 237, 237, 1);
-	height: 80%;
+	height: 600px;
 	display: none;
 	transition: all 1s ease-in-out;
 }
@@ -307,6 +305,16 @@ h3
 	        animation: tracking-in-expand 1.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
+.box2
+{
+	margin-top: 3300px;
+}
+
+.box3
+{
+	width: 100%;
+}
+
 
 .lightbox-on
 {
@@ -323,9 +331,21 @@ h3
 	display: block;
 }
 
+.box3-on
+{
+	display: block;
+}
+
 .thumbnails
 {
 	margin-top: 100px;
+}
+
+.thumbnails h3
+{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 20px;
 }
 
 .thumbnails img
@@ -338,18 +358,18 @@ h3
 }
 
 
-.closeButton1, .closeButton2
+.closeButton1, .closeButton2, .closeButton3
 {
 	width: 30px;
 	height: 30px;
 	text-align: center;
 	border-radius: 40px;
 	padding-right: 5px;
-	margin-left: 890px;
+	margin-left: 750px;
 	margin-top: 10px;
 }
 
-.closeButton1 h3, .closeButton2 h3
+.closeButton1 h3, .closeButton2 h3, .closeButton3 h3
 {
 	font-size: 17px;
 	padding-left: 1px;
@@ -367,6 +387,207 @@ h3
 }
 
 
+/*------------------------------Portfolio-----------------------------------*/
+
+#portfolioWork
+{
+	color: #fff;
+	margin-bottom: 80px;
+	margin-top: 1400px;
+	font-weight: bold;
+	text-shadow: -6px -8px 0px #212830;
+}
+
+#portfolioWork h3
+{
+	margin-bottom: -130px;
+	margin-left: 30px;
+}
+
+#portfolioContent
+{
+	height: 930px;
+	background: rgb(33, 40, 48);
+	padding-top: 160px
+}
+
+#portfolioContent div img
+{
+	width: 450px;
+	height: 250px;
+}
+
+#portfolioContent div
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+#portfolioContent a:hover
+{
+	background: rgba(0, 0, 0, 0.5);
+}
+
+/*------------------------------Contact------------------------*/
+
+#contactForm
+{
+	font-weight: bold;
+}
+
+#contactForm h3
+{
+	margin-left: 30px;
+}
+
+#contactForms
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#emailForm
+{
+	padding-bottom: 10px;
+	border-color: #212830;
+	font-size: 30px;
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#commentForm
+{
+	padding-bottom: 10px;
+	border-color: #212830;
+	font-size: 30px;
+	width: 500px;
+	margin: 0 auto;
+	padding-bottom: 300px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#firstName
+{
+	padding-bottom: 10px;
+	border-color: #212830;
+	font-size: 30px;
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: 100px;
+}
+
+#lastName
+{
+	padding-bottom: 10px;
+	border-color: #212830;
+	font-size: 30px;
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#submitButton
+{
+	display: block;
+	margin: 10px auto 0 auto;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	text-decoration: none;
+	border-radius: 10px;
+	background: rgb(33, 40, 48);
+	color: white;
+	font-family: Helvetica;
+}
+
+/*----------------------------------Map-----------------------------*/
+
+#mapArea
+{
+	margin-top: 130px;
+}
+
+#mapArea h3
+{
+	margin-bottom: 50px;
+	margin-left: 30px;
+	font-weight: bold;
+}
+
+
+#map iframe
+{
+	width: 100%;
+}
+
+/*-----------------------------------Footer---------------------------*/
+
+#footer
+{
+	background: rgb(33, 40, 48);
+}
+
+#footerLogo
+{
+	width: 20%;
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
+#address
+{
+	margin-left: 20px;
+}
+
+#address ul li
+{
+	color: #fff;
+	font-size: 10px;
+	padding: 10px;
+}
+
+#footerNav
+{
+	display: flex;
+}
+
+#footerNav ul
+{
+	margin-left: auto;
+	margin-top: -390px;
+	padding-bottom: 200px;
+}
+
+#footer ul li
+{
+	padding: 10px;
+	margin-right: 10px;
+}
+
+#footer ul li a
+{
+	color: #fff;
+	text-decoration: none;
+	font-size: 35px;
+	font-family: Helvetica;
+	padding: 10px;
+}
+
+#copyRight
+{
+	margin-top: 60px;
+	margin-left: 20px;
+	font-size: 15px;
+	color: #fff;
+}
 
 
 
