@@ -216,12 +216,22 @@ h3
 	line-height: 25px
 }
 
-@media screen and (min-width: 427px) {
+@media screen and (min-width: 400px) {
 		
 		#aboutContent
 		{
 			height: 800px;
 		}
+
+	}
+
+@media screen and (min-width: 500px) {
+		
+		#aboutContent
+		{
+			height: 700px;
+		}
+
 
 	}
 
@@ -234,10 +244,10 @@ h3
 
 	#about h3
 	{
-		font-size: 50px;
+		font-size: 60px;
 		text-align: center;
 		margin-left: 0;
-		margin-bottom: -80px;
+		margin-bottom: -95px;
 	}
 
 	#about p:first-child
@@ -263,7 +273,48 @@ h3
 }
 
 
+/*----------------------------Video------------------------------*/
 
+#videoSec
+{
+	display: flex;
+	margin-bottom: 50px;
+	background: rgb(230, 230, 230);
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: -30px;
+}
+
+#videoSec embed
+{
+	margin: 0 auto;
+	width: 80%;
+	height: 250px;
+}
+
+@media screen and (min-width: 600px) {
+
+	#videoSec embed
+	{
+		height: 350px;
+	}
+}
+
+@media screen and (min-width: 935px) {
+
+	#videoSec embed
+	{
+		height: 450px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+
+	#videoSec embed
+	{
+		height: 550px;
+	}
+}
 
 
 
@@ -298,8 +349,7 @@ h3
 {
 	width: 20%;
 	margin-left: 190px;
-	margin-top: -20px;
-	margin-bottom: 50px;
+	margin-top: -40px;
 
 }
 
@@ -320,6 +370,7 @@ h3
 
 .lightbox
 {
+	display: block;
 	position: absolute;
 	justify-content: center;
 	text-align: center;
@@ -328,7 +379,8 @@ h3
 	box-shadow: 5px 10px #afafaf;
 	top: 0;
 	background-color: rgba(237, 237, 237, 1);
-	height: 600px;
+	width: 100%;
+	height: 500px;
 	display: none;
 	transition: all 1s ease-in-out;
 }
@@ -336,11 +388,11 @@ h3
 .lightbox p
 {
 
-	font-size: 25px;
+	font-size: 15px;
 	text-align: left;
 	padding-right: 40px;
 	padding-left: 40px;
-	line-height: 40px;
+	line-height: 20px;
 	padding-bottom: 15px;
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -383,14 +435,19 @@ h3
 	        animation: tracking-in-expand 1.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
+.box1
+{
+	margin-top: 2400px;
+}
+
 .box2
 {
-	margin-top: 3300px;
+	margin-top: 2750px;
 }
 
 .box3
 {
-	width: 100%;
+	margin-top: 3100px;
 }
 
 
@@ -443,7 +500,7 @@ h3
 	text-align: center;
 	border-radius: 40px;
 	padding-right: 5px;
-	margin-left: 750px;
+	margin-left: 300px;
 	margin-top: 10px;
 }
 
@@ -463,6 +520,218 @@ h3
 {
 	width: 40%;
 }
+
+#renataPic:hover
+{
+	opacity: 0.5;
+}
+
+#victoriaPic:hover
+{
+	opacity: 0.5;
+}
+
+#keiranPic:hover
+{
+	opacity: 0.5;
+}
+
+@media screen and (min-width: 320px) {
+
+		#Info
+		{
+			height: 500px;
+		}
+		
+
+		#logoIcon
+		{
+			margin-left: 220px;
+			margin-top: 10px;
+		}
+
+	}
+
+	@media screen and (min-width: 400px) {
+
+		#Info
+		{
+			height: 650px;
+		}
+
+		.name
+	{
+		font-size: 30px;
+		font-weight: bold;
+		font-family: Helvetica;
+		letter-spacing: 2px;
+		text-align: center;
+	}
+
+	#Info h4
+	{
+		font-size: 30px;
+	}
+
+
+	}
+
+	@media screen and (min-width: 450px) {
+
+		#Info
+		{
+			height: 800px;
+		}
+
+		#Info h3
+		{
+			font-size: 50px;
+		}
+
+		#logoIcon
+		{
+			width: 30%;
+			margin-left: 270px;
+			margin-top: -10px;
+		}
+	}
+
+	@media screen and (min-width: 500px) {
+
+		#Info
+		{
+			height: 1000px;
+		}
+
+		#logoIcon
+		{
+			width: 20%;
+		}
+
+		.box1
+{
+	margin-top: 2300px;
+}
+
+.box2
+{
+	margin-top: 2800px;
+}
+
+.box3
+{
+	margin-top: 3380px;
+}
+	}
+
+	@media screen and (min-width: 600px) {
+
+		#Info
+		{
+			height: 1200px;
+		}
+	}
+
+	@media screen and (min-width: 700px) {
+
+		#Info
+		{
+			height: 1500px;
+		}
+	}
+
+	@media screen and (min-width: 760px) {
+
+		.box1
+{
+	margin-top: 2900px;
+}
+
+.box2
+{
+	margin-top: 3550px;
+}
+
+.box3
+{
+	margin-top: 4300px;
+}
+	}
+
+	@media screen and (min-width: 800px) {
+
+		#Info
+		{
+			height: 1700px;
+		}
+	}
+
+
+
+	@media screen and (min-width: 900px) {
+
+		#Info
+		{
+			height: 1900px;
+		}
+
+		#logoIcon
+		{
+			margin-top: 90px;
+			margin-left: 370px;
+		}
+
+		#Info h3
+		{
+			font-size: 60px;
+			text-align: center;
+			margin-left: 0;
+			padding-top: 50px;
+		}
+
+
+	}
+
+	@media screen and (min-width: 1000px) {
+
+		#Info
+		{
+			height: 2100px;
+		}
+
+		#logoIcon
+		{
+			margin-left: 400px;
+		}
+
+		#Info h3
+		{
+			font-size: 60px;
+			text-align: center;
+			margin-left: 0;
+			padding-top: 50px;
+		}
+
+
+	}
+
+	@media screen and (min-width: 1120px) {
+
+		#Info
+		{
+			height: 2300px;
+		}
+
+		#Info h3
+		{
+			font-size: 60px;
+			text-align: center;
+			margin-left: 0;
+			padding-top: 50px;
+		}
+
+
+	}
 
 
 /*------------------------------Portfolio-----------------------------------*/
@@ -486,16 +755,75 @@ h3
 
 #portfolioContent
 {
-	display: block;
-	height: 930px;
+	display: flex;
+	flex-direction: column;
 	background: rgb(33, 40, 48);
-	padding-top: 160px
 }
+
+#portfolioContent div
+{
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 200px;
+	padding-bottom: 50px;
+}
+
 
 #portfolioContent img
 {
-	width: 70px;
-	justify-content: center;
+	margin-top: 50px;
+}
+
+#portText1
+{
+	display: none;
+}
+
+#portText1:hover
+{
+	display: block;
+}
+
+#portfolioContent img:hover
+{
+	opacity: 0.5;
+}
+
+@media screen and (min-width: 700px) {
+
+	#row1
+	{
+		display: flex;
+		flex-direction: row;
+		padding-top: 100px;
+	}
+
+	#row2
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#portfolioWork h3
+{
+	margin-bottom: -100px;
+	margin-left: 20px;
+	font-size: 60px;
+}
+
+	#portfolioContent div
+{
+	margin: 0 auto;
+	width: 700px;
+}
+
+
+#portfolioContent img
+{
+	width: 600px;
+	padding: 20px;
+
+}
 }
 
 
@@ -506,6 +834,10 @@ h3
 #contactForm
 {
 	font-weight: bold;
+	background: rgb(230, 230, 230);
+	margin-top: -80px;
+	padding-top: 30px;
+	padding-bottom: 50px;
 }
 
 #contactForm h3
@@ -524,7 +856,6 @@ h3
 #emailForm
 {
 	padding-bottom: 10px;
-	border-color: #212830;
 	font-size: 20px;
 	width: 300px;
 	margin: 0 auto;
@@ -535,7 +866,6 @@ h3
 #commentForm
 {
 	padding-bottom: 10px;
-	border-color: #212830;
 	font-size: 20px;
 	width: 300px;
 	margin: 0 auto;
@@ -547,7 +877,6 @@ h3
 #firstName
 {
 	padding-bottom: 10px;
-	border-color: #212830;
 	font-size: 20px;
 	width: 300px;
 	margin: 0 auto;
@@ -558,7 +887,6 @@ h3
 #lastName
 {
 	padding-bottom: 10px;
-	border-color: #212830;
 	font-size: 20px;
 	width: 300px;
 	margin: 0 auto;
@@ -584,7 +912,7 @@ h3
 
 #mapArea
 {
-	margin-top: 130px;
+
 }
 
 #mapArea h3
@@ -598,7 +926,7 @@ h3
 #map iframe
 {
 	width: 100%;
-	height: 200px;
+	height: 500px;
 }
 
 
