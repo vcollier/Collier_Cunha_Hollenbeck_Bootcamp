@@ -6,6 +6,7 @@ img, embed, object, video {
 
 html {
   box-sizing: border-box; 
+  scroll-behavior: smooth;
 }
 
 *,
@@ -67,6 +68,11 @@ h3
   margin-left: auto;
 }
 
+#deskNav
+{
+	display: none;
+}
+
 #mainNav button.expanded
 {
   -webkit-transform: rotate(90deg);
@@ -126,6 +132,16 @@ h3
 
 }
 
+#welcomeMess
+{
+	display: none;
+}
+
+#tagline
+{
+	display: none;
+}
+
 #arrowCon
 {
 	display: flex;
@@ -136,6 +152,106 @@ h3
 	width: 5%;
 	margin: 0 auto;
 	margin-top: 300px;
+}
+
+@media screen and (min-width: 1100px) {
+
+	#mainHeader
+	{
+		background: url(../images/hero-big.jpg);
+		background-attachment: fixed;
+		height: 700px;
+		
+	}
+
+	#mainNav
+	{
+		display: none;
+	}
+
+	#deskNav
+	{
+		display: flex;
+	}
+
+	#deskNav ul
+	{
+		display: flex;
+		flex-direction: row;
+		margin-bottom: -100px;
+		margin-left: auto;
+		margin-right: 10px;
+		margin-top: 50px;
+
+	}
+
+	#deskNav ul li
+	{
+		padding: 20px;
+		margin-top: 20px;
+		
+	}
+
+	#deskNav ul li a
+	{
+		color: #fff;
+		font-size: 25px;
+		text-decoration: none;
+		font-family: Helvetica;
+		letter-spacing: 1px;
+
+	}
+
+	#deskNav ul li a:hover
+	{
+		text-decoration: underline;
+	}
+
+	#logo
+	{
+		padding-top: 40px;
+		margin-left: 30px;
+		max-width: 270px;
+	}
+
+	#welcomeMess {
+
+		display: block;
+	
+	background: linear-gradient(to right, #505c67 0%, #e4e4e4 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: bold;
+	margin-top: 140px;
+	
+}
+
+#welcomeMess h3
+{
+	text-align: center;
+}
+
+#tagline
+{
+	display: block;
+	margin-top: 40px;
+}
+
+#tagline h4
+{
+	color: #e4e4e4;
+	font-family: Helvetica;
+	font-size: 35px;
+	text-align: center;
+	letter-spacing: 2.5px
+}
+
+	#arrow
+{
+	width: 5%;
+	margin: 0 auto;
+	margin-top: 100px;
+}
 }
 
 /*--------------------------CLIENTS----------------------*/
@@ -216,6 +332,11 @@ h3
 	line-height: 25px
 }
 
+#sec2 img
+{
+	display: none;
+}
+
 @media screen and (min-width: 400px) {
 		
 		#aboutContent
@@ -270,6 +391,44 @@ h3
 		height: 1000px;
 	}
 
+}
+
+@media screen and (min-width: 1200px) {
+
+	#aboutContent
+	{
+		display: flex;
+		padding-top: 200px;
+	}
+
+	#about
+	{
+		margin-top: 130px;
+		text-shadow: -7px -7px 0px #212830;
+	}
+
+	#about h3
+	{
+		font-size: 80px;
+		margin-bottom: -130px;
+	}
+
+	#sec1
+	{
+		width: 800px;
+	}
+	#sec2
+	{
+		width: 800px;
+	}
+
+	#sec2 img
+	{
+		display: block;
+		width: 90%;
+		margin-left: 40px;
+		margin-top: 40px;
+	}
 }
 
 
@@ -733,6 +892,38 @@ h3
 
 	}
 
+	@media screen and (min-width: 1200px) {
+
+	.thumbnails 
+	{
+		display: flex;
+		flex-direction: row;
+		margin-top: 100px;
+		width: 100%;
+	}
+
+	.thumbnails div
+	{
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+
+
+	.pictures
+	{
+		width: 300px;
+	}
+
+	#Info
+		{
+			height: 400px;
+		}
+
+
+
+	}
+
 
 /*------------------------------Portfolio-----------------------------------*/
 
@@ -758,6 +949,7 @@ h3
 	display: flex;
 	flex-direction: column;
 	background: rgb(33, 40, 48);
+	padding-top: 50px;
 }
 
 #portfolioContent div
@@ -768,26 +960,23 @@ h3
 	padding-bottom: 50px;
 }
 
-
-#portfolioContent img
-{
-	margin-top: 50px;
-}
-
-#portText1
-{
-	display: none;
-}
-
-#portText1:hover
-{
-	display: block;
-}
-
 #portfolioContent img:hover
 {
 	opacity: 0.5;
 }
+
+#portfolioContent h5
+{
+	color: #fff;
+	font-size: 30px;
+	font-family: Helvetica;
+	margin-left: 20px;
+}
+
+
+
+
+
 
 @media screen and (min-width: 700px) {
 
@@ -826,6 +1015,81 @@ h3
 }
 }
 
+/*-------------------------Portfolio Page---------------------------*/
+
+#portfolioPage h3
+{
+	margin-left: 30px;
+	margin-top: 50px;
+	font-size: 40px;
+}
+
+#portfolioPage p
+{
+	width: 300px;
+	margin-left: 30px;
+	margin-top: 30px;
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 50px;
+	font-family: Helvetica;
+}
+
+@media screen and (min-width: 400px) {
+
+	#portfolioPage h3
+	{
+		font-size: 50px;
+	}
+
+	#portfolioPage p
+	{
+		width: 360px;
+	}
+	
+}
+
+@media screen and (min-width: 500px) {
+
+	#portfolioPage h3
+	{
+		font-size: 50px;
+	}
+
+	#portfolioPage p
+	{
+		width: 460px;
+	}
+	
+}
+
+@media screen and (min-width: 600px) {
+
+	#portfolioPage h3
+	{
+		font-size: 50px;
+	}
+
+	#portfolioPage p
+	{
+		width: 560px;
+	}
+	
+}
+
+@media screen and (min-width: 900px) {
+
+	#portfolioPage h3
+	{
+		font-size: 60px;
+	}
+
+	#portfolioPage p
+	{
+		width: 760px;
+	}
+	
+}
 
 
 
