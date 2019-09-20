@@ -275,34 +275,61 @@ h3
 
 /*----------------------------Video------------------------------*/
 
-#videoSec
+#videoSec video
 {
 	display: flex;
 	margin-bottom: 50px;
 	background: rgb(230, 230, 230);
-	padding-top: 50px;
-	padding-bottom: 50px;
 	margin-top: -30px;
-}
-
-#videoSec embed
-{
 	margin: 0 auto;
 	width: 80%;
 	height: 250px;
 }
 
+#buttonControls
+{
+	text-align: center;
+	margin-top: 10px;
+}
+
+#buttonControls button
+{
+	padding: 16px;
+	margin-left: 10px;
+	color: #fff;
+	font-size: 14px;
+	font-family: Helvetica;
+	background: rgba(33, 40, 48, 0.5);
+}
+
+#buttonControls button:hover
+{
+	text-align: center;
+	padding: 16px;
+	font-size: 14px;
+	transition: all .5s ease;
+	background: rgba(33, 40, 48);
+	border-radius: 15px;
+}
+
+
+
 @media screen and (min-width: 600px) {
 
-	#videoSec embed
+	#videoSec video
 	{
 		height: 350px;
+	}
+
+	#buttonControls
+	{
+		margin-top: 20px;
 	}
 }
 
 @media screen and (min-width: 935px) {
 
-	#videoSec embed
+	#videoSec video
 	{
 		height: 450px;
 	}
@@ -310,9 +337,14 @@ h3
 
 @media screen and (min-width: 1200px) {
 
-	#videoSec embed
+	#videoSec video
 	{
 		height: 550px;
+	}
+
+	#buttonControls
+	{
+		margin-top: 40px;
 	}
 }
 
