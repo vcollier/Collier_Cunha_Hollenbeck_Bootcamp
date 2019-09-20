@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="eng">
+<html lang="en">
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
@@ -9,6 +9,8 @@
     </head>
     
     <body>
+
+        <h1 class="hidden">Boing Designs</h1>
 
         <div id="container">
             <header id="mainHeader">
@@ -28,8 +30,9 @@
         </nav>
 
         <nav id="deskNav">
+            <h2 class="hidden">Secondary Navigation</h2>
            
-            <ul id="burgerMenu">
+            <ul id="normMenu">
               <li><a href="#">Home</a></li>
               <li><a href="#clientList">Clients</a></li>
               <li><a href="#about">About</a></li>
@@ -39,7 +42,7 @@
             </ul>
            
         </nav>
-        <div><img id="logo" src="images/logo.png"></div>
+        <div><img id="logo" src="images/logo.png" alt="Company Logo"></div>
 
         <div id="welcomeMess">
 
@@ -52,29 +55,29 @@
             <h4>Design that puts a spring in your step.</h4>
         </div>
 
-        <div id="arrowCon"><img id="arrow" src="images/right-arrow.png"></div>
+        <div id="arrowCon"><img id="arrow" src="images/right-arrow.png" alt="Arrow"></div>
             </header>
 
-<!-------------------------------------CLIENTS------------------------------>
+<!--CLIENTS-->
 
 <section id="clientList">
     
     <h2 class="hidden">Client List</h2>
     <div id="clientRow1">
-        <img src="images/client1.png">
-        <img src="images/client2.png">
-        <img src="images/client3.png">
+        <img src="images/client1.png" alt="Client Logo">
+        <img src="images/client2.png" alt="Client Logo">
+        <img src="images/client3.png" alt="Client Logo">
     </div>
 
     <div id="clientRow2">
-        <img src="images/client4.jpg">
-        <img src="images/client5.jpg">
-        <img src="images/client6.png">
+        <img src="images/client4.jpg" alt="Client Logo">
+        <img src="images/client5.jpg" alt="Client Logo">
+        <img src="images/client6.png" alt="Client Logo">
     </div>
 
 </section>
 
-<!-------------------------------------ABOUT-------------------------------->
+<!--ABOUT-->
 
 <section id="about">
     <h2 class="hidden">About Us</h2>
@@ -84,28 +87,34 @@
         <p id="par1">In early September of 2018, a group of young adults began their studies in Interactive Media Design at Fanshawe College. Victoria and Renata started working together in their first year and worked so well together that they decided they would always be partners. Victoria and Keiran actually knew eachother from highschool and ultimimately led to the three all working together. With interest in design, Victoria and Renata had a passion for creating beautiful and modern pieces. Keiran took development in highschool which led to him becoming a developer in the program at Fanshawe.</p>
         <p id="par2">Throught the years, the dream team have thought of innovative designs that make clients and viewers jump out of their seats, hence the name ‘Boing’.  These three individuals are very passionate about what the do and when they come together, magic happens! From a simple business website, to a fun, interactive online drumkit, the team has done it all. </p>
         </div>
+
         <div id="sec2">
         <p id="par3">Boing’s mission is to create innovative website and applications. We believe that a lot of websites are created to simplistically. There are ways to make a simple website fun and interactive. Like everything, website design changes year after year and that’s why we think out of the box!</p>
 
-        <img src="images/group-picture.jpg">
+        <img src="images/group-picture.jpg" alt="Company Group Photo">
     </div>
     </div>
 </section>
 
-<!-------------------------------------Video-------------------------------->
+<!--Video-->
 
 <section id="videoSec">
-    <embed src="assets/Boing_final.mp4" autostart="false">
+    <video controls class="teamVid" src="assets/boing-video.mp4" type="video/mp4"></video>
+    <div id="buttonControls">
+        <button class="pauseButton">pause</button>
+        <button class="playButton">play</button>
+        <button class="replayButton">rewind</button>
+    </div>
 </section>
 
 
 
-<!--------------------------------------TEAM-------------------------------->            
+<!--TEAM-->            
 
             <section id="Info">
                 <h2 class="hidden">Team List</h2>
             <h3>Meet the brains<br>behind the<br>bounce</h3>
-            <img id="logoIcon" src="images/logo-icon.jpg">
+            <img id="logoIcon" src="images/logo-icon.jpg" alt="Bouncing Ball">
 <div class="thumbnails">
     <div id="renata">
 <h2 class="name">Renata Cunha</h2>
@@ -135,9 +144,10 @@
     </section>
 
     <section class="lightbox box1">
-        <button class="closeButton1"><h3>X</h3></button>
-        <h3>Renata Cunha</h3>
-        <h4>Designer</h4>
+        <h2 class=" hidden"> More about Renata</h2>
+        <button class="closeButton1"><span>X</span></button>
+        <p>Renata Cunha</p>
+        <p>Designer</p>
     <p>"Professional Journalist with large experience in advertising company and agency interface, customer services and client relationship. She worked as Marketing and Communication Coordinator, Press Agent and Journalist in Brazilian companies, in Minas Gerais and São Paulo.</p>
 
     <p>Renata is dedicated and persistent professional who strives to excel in each and every project she has worked with. </p>
@@ -145,9 +155,10 @@
 </section>
 
     <section class="lightbox box2">
-        <button class="closeButton2"><h3>X</h3></button>
-        <h3>Victoria Collier</h3>
-        <h4>Designer</h4>
+        <h2 class=" hidden"> More about Victoria</h2>
+        <button class="closeButton2"><span>X</span></button>
+        <p>Victoria Collier</p>
+        <p>Designer</p>
     <p>"From a young age, Victoria has always loved design, and has used her capabilities in competitions, school and career. In 2015, Victoria made her debute in the Ontario Skills competition. She placed first in the municipal and regionals, making it to provincials. This sparked Victoria to continue her work in this field.</p>
 
     <p>Although she is still young, she is dedicated to what she does and strives to achieve the greatest level of excellence.</p>
@@ -155,16 +166,17 @@
 </section>
 
 <section class="lightbox box3">
-        <button class="closeButton3"><h3>X</h3></button>
-        <h3>Keiran Hollenbeck</h3>
-        <h4>Developer</h4>
+    <h2 class=" hidden"> More about Keiran</h2>
+        <button class="closeButton3"><span>X</span></button>
+        <p>Keiran Hollenbeck</p>
+        <p>Developer</p>
     <p>hjbkkhbjjwjwisjsdh</p>
 
     <p>hajjfewbkjweqlnfeje</p>
     <p>Vjkarkjbefkbjvkbjkjbrvbjkrj</p>
 </section>
 
-<!--------------------------------------Portfolio------------------------------------>
+<!--Portfolio-->
 
 <section id="portfolioWork">
     <h2 class="hidden">Portfolio Content</h2>
@@ -174,22 +186,22 @@
         <div>
     <div id="row1">
         <div id="piece1">
-            <h5 id="hiddenText1">Anglers.org</h5>
-            <a href="portfolio.html"><img src="images/port-4.jpg"></a>
+            <h5>Anglers.org</h5>
+            <a href="portfolio.html"><img src="images/port-4.jpg" alt="Portfolio Piece"></a>
             </div>
             <div id="piece2">
-                <h5 id="hiddenText1">Icons.com</h5>
-            <a href="#"><img src="images/port-2.jpg"></a>
+                <h5>Icons.com</h5>
+            <a href="#"><img src="images/port-2.jpg" alt="Portfolio Piece"></a>
         </div>
         </div>
         <div id="row2">
             <div id="piece3">
-                <h5 id="hiddenText1">Coufefe.com</h5>
-            <a href="#"><img src="images/port-3.jpg"></a>
+                <h5>Coufefe.com</h5>
+            <a href="#"><img src="images/port-3.jpg" alt="Portfolio Piece"></a>
         </div>
         <div id="piece4">
-            <h5 id="hiddenText1">DrumKit.io</h5>
-            <a href="#"><img src="images/port-1.jpg"></a>
+            <h5>DrumKit.io</h5>
+            <a href="#"><img src="images/port-1.jpg" alt="Portfolio Piece"></a>
         </div>
         </div>
 
@@ -198,7 +210,7 @@
     </div>
 </section>
 
-<!--------------------------------------Contact--------------------------------->
+<!--Contact-->
 
 <section id="contactForm">
     <h2 class="hidden">Contact Forms</h2>
@@ -214,15 +226,17 @@
                 <input type="text" placeholder="Message" id="commentForm">
      </form>
     <button id="submitButton">SEND</button>
+
+    <div id="map2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.4060754885872!2d-81.24954093343865!3d42.982797452101025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef21b3ee98e51%3A0x243531a1cacd1219!2sFanshawe%20College%20-%20School%20of%20Digital%20and%20Performing%20Arts!5e0!3m2!1sen!2sca!4v1568764075790!5m2!1sen!2sca" allowfullscreen=""></iframe></div>
 </section>
 
-<!--------------------------------------Map---------------------------------->
+<!--Map-->
 
 <section id="mapArea">
     <h2 class="hidden">Map</h2>
     <!--<h3>Find Us!</h3>-->
 
-    <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.4060754885872!2d-81.24954093343865!3d42.982797452101025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef21b3ee98e51%3A0x243531a1cacd1219!2sFanshawe%20College%20-%20School%20of%20Digital%20and%20Performing%20Arts!5e0!3m2!1sen!2sca!4v1568764075790!5m2!1sen!2sca"frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+    <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.4060754885872!2d-81.24954093343865!3d42.982797452101025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef21b3ee98e51%3A0x243531a1cacd1219!2sFanshawe%20College%20-%20School%20of%20Digital%20and%20Performing%20Arts!5e0!3m2!1sen!2sca!4v1568764075790!5m2!1sen!2sca" allowfullscreen=""></iframe></div>
     
 
 </section>
@@ -230,7 +244,7 @@
 <footer id="footer">
     
     <h2 class="hidden">Main Footer</h2>
-    <div id="footerLogo"><img src="images/logo.png"></div>
+    <div id="footerLogo"><img src="images/logo.png" alt="Company Logo"></div>
 
 
     <div id="address">
@@ -269,12 +283,8 @@
                         </ul>
                         </nav>
 </footer>
+</div>
 
-    <script src="js/main.js"></script>
-</body>
-</html>
-
-        </div>
 
         <script src="js/main.js"></script>
         <script src="js/modules/menu.js"></script>

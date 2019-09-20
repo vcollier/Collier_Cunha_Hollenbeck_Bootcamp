@@ -12,9 +12,13 @@
 			box2 	= document.querySelector('.box2'),
 			box3    = document.querySelector('.box3'),
 			image		= document.querySelector('img'),
-			closeButton1 = document.querySelector('.closeButton1');
-			closeButton2 = document.querySelector('.closeButton2');
-			closeButton3 = document.querySelector('.closeButton3');
+			closeButton1 = document.querySelector('.closeButton1'),
+			closeButton2 = document.querySelector('.closeButton2'),
+			closeButton3 = document.querySelector('.closeButton3'),
+			teamVideo = document.querySelector('.teamVid'),
+			pauseButton = document.querySelector(".pauseButton"),
+    		playButton = document.querySelector(".playButton"),
+    		rewind = document.querySelector(".replayButton");
 
 	function openLightbox1() {
 		box1.classList.add('box1-on');
@@ -39,6 +43,28 @@
 	function closeLightbox3() {
 		box3.classList.remove('box3-on');
 	}
+
+	function pauseVideo() {
+    	teamVideo.pause();
+	}
+
+	function playVideo() {
+		teamVideo.play();
+	}
+
+	function rewindVideo() {
+		teamVideo.currentTime = 0;
+		playVideo();
+	}
+
+
+	
+	pauseButton.addEventListener("click", pauseVideo);
+
+	playButton.addEventListener("click", playVideo);
+
+	rewind.addEventListener("click", rewindVideo);
+
 
 
 	pic1.addEventListener('click', openLightbox1);

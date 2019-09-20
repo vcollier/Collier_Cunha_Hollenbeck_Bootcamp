@@ -260,7 +260,7 @@ h3
 {
 	display: flex;
 	flex-direction: column;
-	width: 99%;
+	width: 100%;
 	margin-bottom: 50px;
 
 }
@@ -284,6 +284,19 @@ h3
 
 	margin: 0 auto;
 	margin-left: 40px;
+}
+
+@media screen and (min-width: 1000px) {
+
+#clientRow1
+{
+	margin-left: 60px;
+}
+
+#clientRow2
+{
+	margin-left: 60px;
+}
 }
 
 
@@ -436,24 +449,57 @@ h3
 
 #videoSec
 {
+	background: rgb(230, 230, 230);
+	margin-top: -40px;
+}
+
+#videoSec video
+{
 	display: flex;
 	margin-bottom: 50px;
 	background: rgb(230, 230, 230);
 	padding-top: 50px;
 	padding-bottom: 50px;
-	margin-top: -30px;
 }
 
-#videoSec embed
+#videoSec video
 {
+
 	margin: 0 auto;
 	width: 80%;
 	height: 250px;
 }
 
+#buttonControls
+{
+	text-align: center;
+	margin-top: 10px;
+}
+
+#buttonControls button
+{
+	padding: 16px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	color: #fff;
+	font-size: 14px;
+	font-family: Helvetica;
+	background: rgba(33, 40, 48, 0.5);
+}
+
+#buttonControls button:hover
+{
+	text-align: center;
+	padding: 16px;
+	font-size: 14px;
+	transition: all .5s ease;
+	background: rgba(33, 40, 48);
+	border-radius: 15px;
+}
+
 @media screen and (min-width: 600px) {
 
-	#videoSec embed
+	#videoSec video
 	{
 		height: 350px;
 	}
@@ -461,7 +507,7 @@ h3
 
 @media screen and (min-width: 935px) {
 
-	#videoSec embed
+	#videoSec video
 	{
 		height: 450px;
 	}
@@ -469,7 +515,7 @@ h3
 
 @media screen and (min-width: 1200px) {
 
-	#videoSec embed
+	#videoSec video
 	{
 		height: 550px;
 	}
@@ -514,9 +560,9 @@ h3
 
 
 
-.name
+.name 
 {
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: bold;
 	font-family: Helvetica;
 	letter-spacing: 2px;
@@ -663,7 +709,7 @@ h3
 	margin-top: 10px;
 }
 
-.closeButton1 h3, .closeButton2 h3, .closeButton3 h3
+.closeButton1 span, .closeButton2 span, .closeButton3 span
 {
 	font-size: 17px;
 	padding-left: 1px;
@@ -789,6 +835,7 @@ h3
 		{
 			height: 1200px;
 		}
+
 	}
 
 	@media screen and (min-width: 700px) {
@@ -796,6 +843,14 @@ h3
 		#Info
 		{
 			height: 1500px;
+		}
+
+		.lightbox p
+		{
+			font-size: 30px;
+			font-family: Helvetica;
+			line-height: 30px;
+
 		}
 	}
 
@@ -848,6 +903,28 @@ h3
 			padding-top: 50px;
 		}
 
+		.box1
+{
+	margin-top: 3400px;
+}
+
+.box2
+{
+	margin-top: 4050px;
+}
+
+.box3
+{
+	margin-top: 4800px;
+}
+
+.closeButton1, .closeButton2, .closeButton3
+{
+	margin-left: 800px;
+}
+
+
+
 
 	}
 
@@ -871,6 +948,14 @@ h3
 			padding-top: 50px;
 		}
 
+		.lightbox p
+		{
+			font-size: 30px;
+			font-family: Helvetica;
+			line-height: 30px;
+
+		}
+
 
 	}
 
@@ -888,6 +973,21 @@ h3
 			margin-left: 0;
 			padding-top: 50px;
 		}
+
+		.box1
+{
+	margin-top: 3700px;
+}
+
+.box2
+{
+	margin-top: 4350px;
+}
+
+.box3
+{
+	margin-top: 5300px;
+}
 
 
 	}
@@ -919,6 +1019,31 @@ h3
 		{
 			height: 400px;
 		}
+
+	#logoIcon
+	{
+		margin-left: 600px;
+	}
+
+	.box1
+{
+	margin-top: 3700px;
+}
+
+.box2
+{
+	margin-top: 3700px;
+}
+
+.box3
+{
+	margin-top: 3700px;
+}
+
+.closeButton1, .closeButton2, .closeButton3
+{
+	margin-left: 1100px;
+}
 
 
 
@@ -1077,6 +1202,15 @@ h3
 	
 }
 
+@media screen and  (min-width: 700px) {
+
+	#portfolioWork h3
+	{
+		text-align: center;
+		margin-left: 0;
+	}
+}
+
 @media screen and (min-width: 900px) {
 
 	#portfolioPage h3
@@ -1172,6 +1306,79 @@ h3
 	font-family: Helvetica;
 }
 
+#map2
+{
+	display: none;
+}
+
+
+@media screen and (min-width: 700px) {
+
+	#contactForm h3
+	{
+		font-size: 50px;
+		text-align: center;
+		margin-left: 0;
+	}
+
+	#emailForm
+{
+	
+	width: 500px;
+}
+
+#commentForm
+{
+	width: 500px;
+
+}
+
+#firstName
+{
+	width: 500px;
+}
+
+#lastName
+{
+	width: 500px;
+}
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+	#contactForm input
+	{
+		margin-left: 30px;
+	}
+
+	#submitButton
+	{
+		margin-left: 170px;
+	}
+
+	#map
+	{
+		display: none;
+	}
+
+	#map2
+	{
+		display: flex;
+		margin-left: 600px;
+		
+	}
+
+	#map2 iframe
+	{
+		width: 90%;
+		height: 500px;
+		margin-top: -570px;
+
+	}
+}
+
 /*----------------------------------Map-----------------------------*/
 
 #mapArea
@@ -1255,6 +1462,14 @@ h3
 	margin-left: 20px;
 	font-size: 15px;
 	color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+
+	#footerLogo
+	{
+		width: 20%;
+	}
 }
 
 
